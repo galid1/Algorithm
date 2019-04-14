@@ -4,12 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetwothree.py" line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="febff19f-3fd8-49c5-b86a-0399dec55da1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exams/19.04.08/exam1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exams/19.04.08/exam2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exams/19.04.08/exam4.py" afterDir="false" />
+    <list default="true" id="febff19f-3fd8-49c5-b86a-0399dec55da1" name="Default Changelist" comment="19.04.08">
+      <change afterPath="$PROJECT_DIR$/algorithm/dynamic_programming/easy_staris_num.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetowthre_5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/dynamic_programming/uphill_road_num.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/flood_fill/complex_numbering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +19,13 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Study$tree_traversal.coverage" NAME="tree_traversal Coverage Results" MODIFIED="1554630863130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/tree" />
+    <SUITE FILE_PATH="coverage/Study$uphill_road_num.coverage" NAME="uphill_road_num Coverage Results" MODIFIED="1555243484815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$balanced_brackets.coverage" NAME="balanced_brackets Coverage Results" MODIFIED="1554463683224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/stack" />
     <SUITE FILE_PATH="coverage/Study$selenium_test.coverage" NAME="selenium_test Coverage Results" MODIFIED="1551701401240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$Calculator.coverage" NAME="Calculator Coverage Results" MODIFIED="1544359451845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$IntSet.coverage" NAME="IntSet Coverage Results" MODIFIED="1554379144841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/bit_mask" />
     <SUITE FILE_PATH="coverage/Study$huffman_decoding.coverage" NAME="huffman_decoding Coverage Results" MODIFIED="1554643839765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/tree" />
+    <SUITE FILE_PATH="coverage/Study$down_to_zero_II.coverage" NAME="down_to_zero_II Coverage Results" MODIFIED="1554800045633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/queue" />
     <SUITE FILE_PATH="coverage/Study$one_two_three.coverage" NAME="one_two_three Coverage Results" MODIFIED="1554550030645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$exam4.coverage" NAME="exam4 Coverage Results" MODIFIED="1554791256206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exam" />
     <SUITE FILE_PATH="coverage/Study$maze_search.coverage" NAME="maze_search Coverage Results" MODIFIED="1554597029400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
@@ -35,27 +37,34 @@
     <SUITE FILE_PATH="coverage/Study$crawling.coverage" NAME="crawling Coverage Results" MODIFIED="1551752550255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$lib_stack_list.coverage" NAME="lib_stack_list Coverage Results" MODIFIED="1554597380155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/stack" />
     <SUITE FILE_PATH="coverage/Study$hide_and_seek.coverage" NAME="hide_and_seek Coverage Results" MODIFIED="1554602452857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
-    <SUITE FILE_PATH="coverage/Study$test.coverage" NAME="test Coverage Results" MODIFIED="1554691754222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exam" />
+    <SUITE FILE_PATH="coverage/Study$test.coverage" NAME="test Coverage Results" MODIFIED="1555133653084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$Greedy_ATM.coverage" NAME="Greedy_ATM Coverage Results" MODIFIED="1552635659123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/greedy" />
     <SUITE FILE_PATH="coverage/Study$make_one.coverage" NAME="make_one Coverage Results" MODIFIED="1554551093689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
+    <SUITE FILE_PATH="coverage/Study$dfs2.coverage" NAME="dfs2 Coverage Results" MODIFIED="1555061358570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$most_height_of_tree.coverage" NAME="most_height_of_tree Coverage Results" MODIFIED="1554639537085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/tree" />
+    <SUITE FILE_PATH="coverage/Study$tomato.coverage" NAME="tomato Coverage Results" MODIFIED="1555142093297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$Heap.coverage" NAME="Heap Coverage Results" MODIFIED="1553230927987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure" />
     <SUITE FILE_PATH="coverage/Study$emoticon.coverage" NAME="emoticon Coverage Results" MODIFIED="1554616016944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$craw_test.coverage" NAME="craw_test Coverage Results" MODIFIED="1551697685761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$bst_insertion.coverage" NAME="bst_insertion Coverage Results" MODIFIED="1554641636607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/tree" />
     <SUITE FILE_PATH="coverage/Study$02_Dijkstra.coverage" NAME="02_Dijkstra Coverage Results" MODIFIED="1552910395796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/greedy" />
+    <SUITE FILE_PATH="coverage/Study$organic_cabbage.coverage" NAME="organic_cabbage Coverage Results" MODIFIED="1555218106767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
+    <SUITE FILE_PATH="coverage/Study$easy_staris_num.coverage" NAME="easy_staris_num Coverage Results" MODIFIED="1555242813356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$lib_queue.coverage" NAME="lib_queue Coverage Results" MODIFIED="1554639610123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/queue" />
     <SUITE FILE_PATH="coverage/Study$onetwothree.coverage" NAME="onetwothree Coverage Results" MODIFIED="1554371343201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/brute_force" />
     <SUITE FILE_PATH="coverage/Study$01_DFS_And_BFS.coverage" NAME="01_DFS_And_BFS Coverage Results" MODIFIED="1554372446123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
+    <SUITE FILE_PATH="coverage/Study$find_route.coverage" NAME="find_route Coverage Results" MODIFIED="1554879275755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$basic.coverage" NAME="basic Coverage Results" MODIFIED="1552629621727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/Study$next_permutation.coverage" NAME="next_permutation Coverage Results" MODIFIED="1554367326003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/permutation" />
     <SUITE FILE_PATH="coverage/Study$2d_array_ds.coverage" NAME="2d_array_ds Coverage Results" MODIFIED="1554558457858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/array" />
     <SUITE FILE_PATH="coverage/Study$MergeSort.coverage" NAME="MergeSort Coverage Results" MODIFIED="1552698058353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/divideAndConquer" />
+    <SUITE FILE_PATH="coverage/Study$complex_numbering.coverage" NAME="complex_numbering Coverage Results" MODIFIED="1555224433279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/flood_fill" />
     <SUITE FILE_PATH="coverage/Study$break_wall.coverage" NAME="break_wall Coverage Results" MODIFIED="1554625929651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$make_n_by_onetwothree.coverage" NAME="make_n_by_onetwothree Coverage Results" MODIFIED="1554551048198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$2n_tiling2.coverage" NAME="2n_tiling2 Coverage Results" MODIFIED="1554539572494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$exam3.coverage" NAME="exam3 Coverage Results" MODIFIED="1554791261815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exam" />
     <SUITE FILE_PATH="coverage/Study$IsExit.coverage" NAME="IsExit Coverage Results" MODIFIED="1551684332014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Study$make_n_by_onetowthre_5.coverage" NAME="make_n_by_onetowthre_5 Coverage Results" MODIFIED="1555235663713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$lambda.coverage" NAME="lambda Coverage Results" MODIFIED="1549671097468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$is_this_bst.coverage" NAME="is_this_bst Coverage Results" MODIFIED="1554682558731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/tree" />
     <SUITE FILE_PATH="coverage/Study$seven_hobit.coverage" NAME="seven_hobit Coverage Results" MODIFIED="1554096856890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/brute_force" />
@@ -63,8 +72,10 @@
     <SUITE FILE_PATH="coverage/Study$date_test.coverage" NAME="date_test Coverage Results" MODIFIED="1551702076110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/Study$02_Dijkstra_LinkedList.coverage" NAME="02_Dijkstra_LinkedList Coverage Results" MODIFIED="1554014242411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/greedy" />
     <SUITE FILE_PATH="coverage/Study$DFS_And_BFS.coverage" NAME="DFS_And_BFS Coverage Results" MODIFIED="1552630943572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/Study$hide_and_seek_3.coverage" NAME="hide_and_seek_3 Coverage Results" MODIFIED="1555124983360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$greatest_common_divisor.coverage" NAME="greatest_common_divisor Coverage Results" MODIFIED="1554022621504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/math" />
     <SUITE FILE_PATH="coverage/Study$level_order_traversal.coverage" NAME="level_order_traversal Coverage Results" MODIFIED="1554639698466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/tree" />
+    <SUITE FILE_PATH="coverage/Study$cycle_detection.coverage" NAME="cycle_detection Coverage Results" MODIFIED="1554803165076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/list" />
     <SUITE FILE_PATH="coverage/Study$fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1554512929599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Study$DFS.coverage" NAME="DFS Coverage Results" MODIFIED="1554385049236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$equal_stack.coverage" NAME="equal_stack Coverage Results" MODIFIED="1554458429097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structure/stack" />
@@ -75,38 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="22" column="39" selection-start-line="4" selection-end-line="30" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam1.py">
+        <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/uphill_road_num.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="16" column="37" selection-start-line="4" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="435">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -129,6 +113,7 @@
       <find>readline</find>
       <find>sec</find>
       <find>stdin</find>
+      <find>k*2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,20 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/algorithm/greedy/02_Dijkstra.py" />
-        <option value="$PROJECT_DIR$/algorithm/greedy/03_Dijkstra_Matrix.py" />
-        <option value="$PROJECT_DIR$/algorithm/priority_queue.py" />
-        <option value="$PROJECT_DIR$/data_structure/queue.py" />
-        <option value="$PROJECT_DIR$/data_structure/circular_queue.py" />
-        <option value="$PROJECT_DIR$/data_structure/linked_queue.py" />
-        <option value="$PROJECT_DIR$/algorithm/greedy/04_Dijkstra_Clear.py" />
-        <option value="$PROJECT_DIR$/data_structure/Heap.py" />
-        <option value="$PROJECT_DIR$/algorithm/greedy/02_Dijkstra_LinkedList.py" />
-        <option value="$PROJECT_DIR$/algorithm/math/greatest_common_divisor.py" />
-        <option value="$PROJECT_DIR$/algorithm/brute_force/seven_hobit.py" />
-        <option value="$PROJECT_DIR$/algorithm/permutation/next_permutation.py" />
-        <option value="$PROJECT_DIR$/algorithm/brute_force/onetwothree.py" />
-        <option value="$PROJECT_DIR$/algorithm/brute_force/one_two_three.py" />
         <option value="$PROJECT_DIR$/algorithm/bit_mask/IntSet.py" />
         <option value="$PROJECT_DIR$/algorithm/DFS_BFS/DFS.py" />
         <option value="$PROJECT_DIR$/algorithm/DFS_BFS/01_DFS_And_BFS.py" />
@@ -193,13 +164,27 @@
         <option value="$PROJECT_DIR$/exam/exam2.py" />
         <option value="$PROJECT_DIR$/exam/exam4.py" />
         <option value="$PROJECT_DIR$/exam/exam3.py" />
+        <option value="$PROJECT_DIR$/data_structure/queue/down_to_zero_II.py" />
+        <option value="$PROJECT_DIR$/data_structure/list.py" />
+        <option value="$PROJECT_DIR$/data_structure/list/cycle_detection.py" />
+        <option value="$PROJECT_DIR$/algorithm/DFS_BFS/find_route.py" />
+        <option value="$PROJECT_DIR$/algorithm/DFS_BFS/dfs2.py" />
+        <option value="$PROJECT_DIR$/algorithm/DFS_BFS/hide_and_seek_3.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/algorithm/DFS_BFS/tomato.py" />
+        <option value="$PROJECT_DIR$/algorithm/DFS_BFS/organic_cabbage.py" />
+        <option value="$PROJECT_DIR$/algorithm/flood_fill/complex_numbering.py" />
+        <option value="$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetowthre5.py" />
+        <option value="$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetowthre_5.py" />
+        <option value="$PROJECT_DIR$/algorithm/dynamic_programming/easy_staris_num.py" />
+        <option value="$PROJECT_DIR$/algorithm/dynamic_programming/uphill_road_num.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="386" />
-    <option name="y" value="-12" />
-    <option name="width" value="987" />
+    <option name="x" value="191" />
+    <option name="y" value="-13" />
+    <option name="width" value="974" />
     <option name="height" value="938" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -208,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -218,19 +204,18 @@
             <path>
               <item name="Study" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="data_structure" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Study" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="data_structure" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="stack" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dynamic_programming" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,11 +226,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\galid\PycharmProjects\Study\exams\19.04.08" />
       <recent name="C:\Users\galid\PycharmProjects\Study\algorithm\dynamic_programming" />
       <recent name="C:\Users\galid\PycharmProjects\Study\data_structure\queue" />
       <recent name="C:\Users\galid\PycharmProjects\Study\data_structure\heap" />
       <recent name="C:\Users\galid\PycharmProjects\Study\data_structure" />
-      <recent name="C:\Users\galid\PycharmProjects\Study\algorithm\DFS_BFS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,8 +245,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.exam3">
-    <configuration name="exam1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.uphill_road_num">
+    <configuration name="complex_numbering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,12 +254,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/flood_fill" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/exam1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/flood_fill/complex_numbering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,7 +268,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exam2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="easy_staris_num" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,12 +276,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/dynamic_programming" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/exam2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/dynamic_programming/easy_staris_num.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,7 +290,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exam3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="make_n_by_onetowthre_5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -313,12 +298,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/dynamic_programming" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/exam3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetowthre_5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -327,7 +312,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="exam4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="organic_cabbage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -335,12 +320,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/DFS_BFS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/exam4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/DFS_BFS/organic_cabbage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -349,7 +334,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="uphill_road_num" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -357,12 +342,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exam" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm/dynamic_programming" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exam/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/dynamic_programming/uphill_road_num.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -373,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.exam3" />
-        <item itemvalue="Python.exam4" />
-        <item itemvalue="Python.exam2" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.exam1" />
+        <item itemvalue="Python.uphill_road_num" />
+        <item itemvalue="Python.easy_staris_num" />
+        <item itemvalue="Python.make_n_by_onetowthre_5" />
+        <item itemvalue="Python.complex_numbering" />
+        <item itemvalue="Python.organic_cabbage" />
       </list>
     </recent_temporary>
   </component>
@@ -443,12 +428,50 @@
       <workItem from="1554711939606" duration="138000" />
       <workItem from="1554791067146" duration="260000" />
       <workItem from="1554791341370" duration="12000" />
-      <workItem from="1554791363933" duration="610000" />
+      <workItem from="1554791363933" duration="9859000" />
+      <workItem from="1554876243725" duration="9960000" />
+      <workItem from="1554955049777" duration="4439000" />
+      <workItem from="1554989748316" duration="1264000" />
+      <workItem from="1555059092864" duration="12249000" />
+      <workItem from="1555073146493" duration="64000" />
+      <workItem from="1555124916256" duration="537000" />
+      <workItem from="1555133293541" duration="8502000" />
+      <workItem from="1555144001435" duration="88000" />
+      <workItem from="1555217059306" duration="13452000" />
     </task>
+    <task id="LOCAL-00001" summary="19.04.08">
+      <created>1554791999687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554791999687</updated>
+    </task>
+    <task id="LOCAL-00002" summary="19.04.11">
+      <created>1554991685157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554991685157</updated>
+    </task>
+    <task id="LOCAL-00003" summary="19.04.12">
+      <created>1555073196171</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555073196171</updated>
+    </task>
+    <task id="LOCAL-00004" summary="19.04.13&#10;&#10;bfs 문제 (7576, 1012)&#10;queue 사용시 collections.deque 사용하기!! 시간 매우 단축">
+      <created>1555144063252</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555144063252</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269051000" />
+    <option name="totallyTimeSpent" value="328855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,17 +484,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991511" visible="true" weight="0.15146667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.497545" visible="true" weight="0.21813333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5008489" side_tool="true" weight="0.14498934" />
+      <window_info id="Favorites" order="2" sideWeight="0.502455" side_tool="true" weight="0.21386667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36117136" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4121475" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4078091" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4262473" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.35032538" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.30227518" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3275488" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3383948" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -479,6 +503,7 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -529,6 +554,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="19.04.08" />
+    <MESSAGE value="19.04.11" />
+    <MESSAGE value="19.04.12" />
+    <MESSAGE value="19.04.13&#10;&#10;bfs 문제 (7576, 1012)&#10;queue 사용시 collections.deque 사용하기!! 시간 매우 단축" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.04.13&#10;&#10;bfs 문제 (7576, 1012)&#10;queue 사용시 collections.deque 사용하기!! 시간 매우 단축" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,6 +700,46 @@
           <line>22</line>
           <option name="timeStamp" value="198" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_structure/list/cycle_detection.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data_structure/list/cycle_detection.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/DFS_BFS/find_route.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/DFS_BFS/tomato.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="213" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/DFS_BFS/tomato.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/DFS_BFS/tomato.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/DFS_BFS/organic_cabbage.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm/flood_fill/complex_numbering.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -679,131 +751,51 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="graph.Node" language="Python" />
-        <watch expression="fromlist" />
-        <watch expression="self.front.next.next.item" />
-        <watch expression="self.count" />
-        <watch expression="temp_node" />
+        <watch expression="d" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>d</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>count</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>0x03A0F750</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>matrix</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>graph.Node</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>d[Unable to handle:]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/crawling.py" />
-    <entry file="file://$PROJECT_DIR$/data_structure/queue/linked_queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structure/queue/priority_queue.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structure/queue/circular_queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1019017199/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/math/greatest_common_divisor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/brute_force/seven_hobit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structure/heap/Heap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambda.py" />
-    <entry file="file://$PROJECT_DIR$/algorithm/greedy/04_Dijkstra_Clear.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/greedy/03_Dijkstra_Matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/greedy/02_Dijkstra_LinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="77" column="71" selection-start-line="77" selection-start-column="71" selection-end-line="77" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/permutation/next_permutation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/brute_force/onetwothree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/01_DFS_And_BFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="93" column="18" selection-end-line="118" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_structure/stack/equal_stack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="332" selection-start-line="332" selection-end-line="332" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/urllib/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="777" selection-start-line="777" selection-end-line="777" />
         </state>
       </provider>
     </entry>
@@ -835,45 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/DFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/2n_tiling2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/2n_tiling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/make_one.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetwothree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/fibonacci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -967,16 +924,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/brute_force/Test.py" />
-    <entry file="file://$PROJECT_DIR$/exam/exam6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/exam6.py" />
     <entry file="file://$PROJECT_DIR$/data_structure/stack/balanced_brackets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -987,37 +935,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam/test.py">
+    <entry file="file://$PROJECT_DIR$/exam/test.py" />
+    <entry file="file://$PROJECT_DIR$/exam/exam3.py" />
+    <entry file="file://$PROJECT_DIR$/exam/exam5.py" />
+    <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam/exam3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam/exam5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="22" column="39" selection-start-line="4" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="286">
+          <caret line="16" column="37" selection-start-line="4" selection-end-line="33" selection-end-column="21" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -1034,13 +958,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam1.py">
+    <entry file="file://$PROJECT_DIR$/exams/19.04.08/exam2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="37" selection-start-line="4" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="451">
+          <caret line="22" column="39" selection-start-line="4" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_structure/queue/down_to_zero_II.py" />
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/fibonacci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/2n_tiling2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/2n_tiling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_structure/list.py" />
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/DFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/dfs2.py" />
+    <entry file="file://$PROJECT_DIR$/data_structure/list/cycle_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <element signature="e#28#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/01_DFS_And_BFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/find_route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#17#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/hide_and_seek_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="896" selection-start-line="896" selection-end-line="896" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/tomato.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="777" selection-start-line="777" selection-end-line="777" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/DFS_BFS/organic_cabbage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="e#33#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/flood_fill/complex_numbering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#21#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetwothree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/make_n_by_onetowthre_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="44" column="17" lean-forward="true" selection-start-line="10" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/easy_staris_num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/dynamic_programming/uphill_road_num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
         </state>
       </provider>
     </entry>
