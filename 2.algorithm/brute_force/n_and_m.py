@@ -31,7 +31,7 @@ def recursive(n, m, digit, visit, result):
         visit[digit] = i
         for j in range(digit+1, m+1):
             visit[j] = 0
-        
+
         result.append(i)
         recursive(n, m, digit+1, visit, result)
 
