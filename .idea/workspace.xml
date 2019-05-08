@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="febff19f-3fd8-49c5-b86a-0399dec55da1" name="Default Changelist" comment="19.04.25&#10;&#10;brute_force(15649, 15650, 15651)">
-      <change afterPath="$PROJECT_DIR$/1.data_structure/queue/printer_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.algorithm/brute_force/sum_of_partitial_sequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,6 +83,7 @@
     <SUITE FILE_PATH="coverage/Study$exam3.coverage" NAME="exam3 Coverage Results" MODIFIED="1554791261815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exam" />
     <SUITE FILE_PATH="coverage/Study$IsExit.coverage" NAME="IsExit Coverage Results" MODIFIED="1551684332014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Study$make_n_by_onetowthre_5.coverage" NAME="make_n_by_onetowthre_5 Coverage Results" MODIFIED="1555235663713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm/dynamic_programming" />
+    <SUITE FILE_PATH="coverage/Study$sum_of_partitial_sequence.coverage" NAME="sum_of_partitial_sequence Coverage Results" MODIFIED="1557300009612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.algorithm/brute_force" />
     <SUITE FILE_PATH="coverage/Study$seven_dwarfs.coverage" NAME="seven_dwarfs Coverage Results" MODIFIED="1555489572541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.algorithm/brute_force" />
     <SUITE FILE_PATH="coverage/Study$num_of_connection_elements.coverage" NAME="num_of_connection_elements Coverage Results" MODIFIED="1556609711181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/2.algorithm/DFS_BFS" />
     <SUITE FILE_PATH="coverage/Study$lambda.coverage" NAME="lambda Coverage Results" MODIFIED="1549671097468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -111,13 +112,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1.data_structure/queue/printer_queue.py">
+        <entry file="file://$PROJECT_DIR$/2.algorithm/brute_force/sum_of_partitial_sequence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding>
-                <element signature="e#17#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -157,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/exam/exam4.py" />
         <option value="$PROJECT_DIR$/exam/exam3.py" />
         <option value="$PROJECT_DIR$/data_structure/queue/down_to_zero_II.py" />
         <option value="$PROJECT_DIR$/data_structure/list.py" />
@@ -208,12 +205,13 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/2.algorithm/dynamic_programming/uphill_road_num.py" />
         <option value="$PROJECT_DIR$/1.data_structure/queue/printer_queue.py" />
+        <option value="$PROJECT_DIR$/2.algorithm/brute_force/sum_of_partitial_sequence.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="442" />
-    <option name="y" value="-18" />
+    <option name="x" value="561" />
+    <option name="y" value="-12" />
     <option name="width" value="1055" />
     <option name="height" value="938" />
   </component>
@@ -233,13 +231,13 @@
             <path>
               <item name="Study" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="1.data_structure" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="2.algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Study" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="1.data_structure" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="queue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="2.algorithm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="brute_force" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -275,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.printer_queue">
+  <component name="RunManager" selected="Python.sum_of_partitial_sequence">
     <configuration name="124_world" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -342,6 +340,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sum_of_partitial_sequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2.algorithm/brute_force" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2.algorithm/brute_force/sum_of_partitial_sequence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -364,35 +384,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tower" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1.data_structure/stack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.data_structure/stack/tower.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sum_of_partitial_sequence" />
         <item itemvalue="Python.printer_queue" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.easy_staris_num" />
         <item itemvalue="Python.124_world" />
-        <item itemvalue="Python.tower" />
       </list>
     </recent_temporary>
   </component>
@@ -503,7 +501,7 @@
       <workItem from="1556850338472" duration="834000" />
       <workItem from="1556861010628" duration="10713000" />
       <workItem from="1557037832469" duration="4624000" />
-      <workItem from="1557289580679" duration="2706000" />
+      <workItem from="1557289580679" duration="7881000" />
     </task>
     <task id="LOCAL-00001" summary="19.04.08">
       <created>1554791999687</created>
@@ -656,7 +654,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452826000" />
+    <option name="totallyTimeSpent" value="458001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,8 +674,8 @@
       <window_info id="Favorites" order="2" sideWeight="0.502455" side_tool="true" weight="0.21386667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973333" weight="0.37093276" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4088937" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49973333" visible="true" weight="0.37093276" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4088937" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.2748268" />
@@ -1031,7 +1029,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="docs" />
+        <watch expression="sequence" />
       </configuration>
     </watches-manager>
   </component>
@@ -1082,13 +1080,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2.algorithm/DFS_BFS/01_DFS_And_BFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.algorithm/DFS_BFS/find_route.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -1407,11 +1398,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1.data_structure/queue/printer_queue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="418">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#17#27#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.algorithm/brute_force/sum_of_partitial_sequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
