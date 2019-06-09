@@ -1,20 +1,23 @@
-# 백준 15657 n과 m 8
+# 백준 15665 n과 m 11
 
 import sys
 
 def solution(r = 0, result_arr = []):
-    global n, m, nums
+    global n, m, nums, visit_result
 
     if r >= m :
-        result = ''
+        result = ""
         for num in result_arr:
-            result += str(num) + ' '
+            result += str(num) + " "
+
+        if result in visit_result:
+            return
+
+        visit_result.add(result)
         print(result)
         return
 
     for num in nums:
-        if r > 0 and result_arr[r - 1] > num:
-            continue
         tmp = result_arr.copy()
         tmp.append(num)
         solution(r + 1, tmp)
@@ -23,4 +26,5 @@ def solution(r = 0, result_arr = []):
 n, m = map(int, sys.stdin.readline().rstrip().split(" "))
 nums = list(map(int, sys.stdin.readline().rstrip().split(" ")))
 nums.sort()
+visit_result = set()
 solution()
