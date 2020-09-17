@@ -6,9 +6,7 @@ def solution(numbers):
             sums = numbers[i] + numbers[j]
             answer.add(sums)
 
-    answer = list(answer)
-    answer = sorted(answer)
-    return answer
+    return list(sorted(answer))
 
 
 # print(solution([2,1,3,4,1]))
