@@ -1,0 +1,38 @@
+문제 설명
+CART_PRODUCTS 테이블은 장바구니에 담긴 상품 정보를 담은 테이블입니다. CART_PRODUCTS 테이블의 구조는 다음과 같으며, ID, CART_ID, NAME, PRICE는 각각 테이블의 아이디, 장바구니의 아이디, 상품 종류, 가격을 나타냅니다.
+
+NAME	TYPE
+ID	INT
+CART_ID	INT
+NAME	VARCHAR
+PRICE	INT
+문제
+데이터 분석 팀에서는 상품 X를 샀을 때 상품 Y를 살 확률을 알아보려 합니다. 이를 위해 여러분은 서로 다른 두 아이템 쌍을 담은 장바구니 수를 구하려 합니다. 서로 다른 두 상품 X, Y을 동시에 담은 장바구니의 수를 조회하는 SQL 문을 작성해주세요. 상품 쌍을 담은 장바구니가 하나도 없는 경우, 이 상품 쌍에 대한 정보는 결과에 포함하지 않습니다. 또한 결과는 상품 X와 Y의 이름 순으로 보여주세요.
+
+예시
+예를 들어 CART_PRODUCTS 테이블이 다음과 같다면
+
+CART_PRODUCTS 테이블
+
+ID	CART_ID	NAME	PRICE
+1632	83	Vegetable	2480
+1633	83	Sausages	3980
+1634	83	Vegetable	2480
+5510	287	Vegetable	2480
+5513	287	Sausages	3980
+5514	287	Coffee	24800
+(Vegetable, Sausages) 상품 쌍을 담은 장바구니는 83, 287번 장바구니 두 개 입니다.
+(Sausages, Vegetable) 상품 쌍을 담은 장바구니는 83, 287번 장바구니 두 개 입니다.
+(Vegetable, Coffee) 상품 쌍을 담은 장바구니는 287번 장바구니 하나입니다.
+(Coffee, Vegetable) 상품 쌍을 담은 장바구니는 287번 장바구니 하나입니다.
+(Sausages, Coffee) 상품 쌍을 담은 장바구니는 287번 장바구니 하나입니다.
+(Coffee, Sausages) 상품 쌍을 담은 장바구니는 287번 장바구니 하나입니다.
+결과는 상품 X와 Y의 이름 순으로 조회해야 하므로, SQL 문을 실행하면 다음과 같이 나와야 합니다.
+
+NAME_X	NAME_Y	장바구니 수
+Coffee	Sausages	1
+Coffee	Vegetable	1
+Sausages	Coffee	1
+Sausages	Vegetable	2
+Vegetable	Coffee	1
+Vegetable	Sausages	2
