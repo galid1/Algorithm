@@ -1,7 +1,7 @@
 import sys
 
 
-def solution(row):         #우하 #좌하
+def solution(row):          #우하 #좌하
     global n, answer, cols, lrds, rlds
 
     # 정답
