@@ -8,9 +8,9 @@ def solution(idx, inputs):
 
     mok = v // p
     ans += mok * l
-    ans += v - (mok * p)
+    ans += min(l, v - (mok*p))
 
-    print("Case ", idx, ': ', ans)
+    print("Case %d: %d" % (idx,ans))
 
 
 idx = 1
