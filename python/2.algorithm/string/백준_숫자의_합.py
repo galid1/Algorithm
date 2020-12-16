@@ -8,5 +8,4 @@ def solution():
 
 n = int(sys.stdin.readline())
 num = list(map(int, list(sys.stdin.readline().strip())))
-
 solution()
