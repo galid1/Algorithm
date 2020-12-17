@@ -14,7 +14,7 @@ def solution(citations):
         answer = len(citations)
 
     return answer
-
+ 
 solution([0])
 solution([2, 2])
 solution([4, 4, 4, 4])
