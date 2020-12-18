@@ -1,0 +1,19 @@
+import sys
+
+
+def solution():
+    global li
+    g = {chr(i) : -1 for i in range(97, 97+26)}
+
+    idx = 0
+
+    for c in li:
+        if g[c] == -1:
+            g[c] = idx
+        idx += 1
+
+    for val in g.values():
+        print(val, end=' ')
+
+li = list(sys.stdin.readline().strip())
+solution()
