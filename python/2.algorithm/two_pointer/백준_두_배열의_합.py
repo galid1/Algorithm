@@ -21,7 +21,18 @@ def solution():
         if t - k in c_s_ms.keys():
             ans += c_s_ns[k] * c_s_ms[t-k]
 
-
+    # L, R = 0, len(set_ms) - 1
+    #
+    # while L < len(set_ns) and R >= 0:
+    #     sums = set_ns[L] + set_ms[R]
+    #     if sums == t:
+    #         ans += c_s_ns[set_ns[L]] * c_s_ms[set_ms[R]]
+    #         L += 1
+    #         R -= 1
+    #     elif sums > t:
+    #         R -= 1
+    #     elif sums < t:
+    #         L += 1
 
     print(ans)
 
