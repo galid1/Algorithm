@@ -1,22 +1,32 @@
 import sys
-from itertools import combinations
+
+def recur(length, cur, visit, next_idx):
+    global ans, l, r, x, a
+
+    if len(cur) == length:
+        if l <= sum(cur) <= r:
+            if cur[-1] - cur[0] >= x:
+                ans += 1
+        return
+
+    for i in range(next_idx, len(a)):
+        cur.append(a[i])
+        visit[i] = True
+        recur(length, cur, visit, i+1)
+        cur.pop()
+        visit[i] = False
+
 
 def solution():
-    global n, l, r, x, a
+    global n
 
     a.sort()
-    all = []
     for length in range(2, len(a)+1):
-        all += list(combinations(a, length))
-
-    ans = 0
-    for t in all:
-        if l <= sum(t) <= r:
-            if abs(t[-1] - t[0]) >= x:
-                ans += 1
+        recur(length, [], [False for _ in range(len(a)+1)], 0)
 
     print(ans)
 
+ans = 0
 n, l, r, x = map(int, sys.stdin.readline().strip().split(" "))
 a = list(map(int, sys.stdin.readline().strip().split(" ")))
 
