@@ -5,33 +5,52 @@
 
 from collections import deque
 
+# def solution(progresses, speeds):
+#     answer = []
+#     progresses = deque(progresses)
+#     speeds = deque(speeds)
+#
+#     while progresses:
+#         # 진행
+#         while progresses[0] < 100:
+#             for si in range(len(speeds)):
+#                 progresses[si] += speeds[si]
+#
+#         # 배포 확인
+#         count = 0
+#         for progress in progresses:
+#             if progress >= 100:
+#                 count += 1
+#             else:
+#                 break
+#         if count > 0:
+#             answer.append(count)
+#
+#             for j in range(count):
+#                 progresses.popleft()
+#                 speeds.popleft()
+#
+#     return answer
+
 def solution(progresses, speeds):
-    answer = []
     progresses = deque(progresses)
     speeds = deque(speeds)
 
+    ans = []
     while progresses:
-        # 진행
         while progresses[0] < 100:
-            for si in range(len(speeds)):
-                progresses[si] += speeds[si]
+            for i in range(len(progresses)):
+                progresses[i] += speeds[i]
 
-        # 배포 확인
-        count = 0
-        for progress in progresses:
-            if progress >= 100:
-                count += 1
-            else:
-                break
-        if count > 0:
-            answer.append(count)
+        res = 0
+        while progresses and progresses[0] >= 100:
+            res += 1
+            progresses.popleft()
+            speeds.popleft()
+        ans.append(res)
 
-            for j in range(count):
-                progresses.popleft()
-                speeds.popleft()
+    # print(ans)
+    return ans
 
-    return answer
-
-
-# print(solution([93, 30, 55], [1, 30, 5]))
-print(solution([95, 90, 99, 99, 80, 99], [1, 1, 1, 1, 1, 1]))
+solution([93, 30, 55],[1, 30, 5])
+solution([95, 90, 99, 99, 80, 99],[1, 1, 1, 1, 1, 1])
