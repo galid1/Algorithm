@@ -47,7 +47,6 @@ def is_valid(ops_idx):
     return False
 
 
-
 n = int(sys.stdin.readline().strip())
 nums = list(map(int, sys.stdin.readline().strip().split(" ")))
 ops = list(map(int, sys.stdin.readline().strip().split(" ")))
