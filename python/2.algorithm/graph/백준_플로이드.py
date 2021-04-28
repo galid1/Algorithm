@@ -16,7 +16,7 @@ def solve():
 
     for l in g:
         for num in l:
-            if num == 100001:
+            if num == 10000001:
                 print(0, end=' ')
                 continue
             print(num, end=' ')
@@ -25,7 +25,7 @@ def solve():
 
 n = int(sys.stdin.readline().strip())
 m = int(sys.stdin.readline().strip())
-g = [[100001 for _ in range(n)] for _ in range(n)]
+g = [[10000001 for _ in range(n)] for _ in range(n)]
 for _ in range(m):
     f, t, v = map(int, sys.stdin.readline().strip().split(" "))
     g[f-1][t-1] = min(g[f-1][t-1], v)
