@@ -1,5 +1,2 @@
-import sys
-
-
-def solve():
-    global a
+def solution():
+    pass

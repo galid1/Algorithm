@@ -1,45 +1,27 @@
-def solution(lottos, win_nums):
-    answer = []
+import sys
 
-    right_cnt = 0
-    random = 0
-    for lotto in lottos:
-        if lotto == 0:
-            random += 1
-            continue
 
-        right, right_idx = False, 0
-        for i in range(len(win_nums)):
-            if lotto == win_nums[i]:
-                right_cnt += 1
-                right = True
-                right_idx = i
-                break
+def solution(s):
+    nums = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8',
+            'nine': '9'}
 
-        if right:
-            win_nums.__delitem__(right_idx)
+    answer = ''
 
-    top = right_cnt + random
-    bottom = right_cnt
-
-    answer.append(cal_grade(top))
-    answer.append(cal_grade(bottom))
+    idx = 0
+    while idx < len(s):
+        if s[idx].isdigit():
+            answer += s[idx]
+            idx += 1
+        else:
+            word = ''
+            while idx < len(s):
+                word += s[idx]
+                if word in nums:
+                    answer += nums[word]
+                    idx += 1
+                    break
+                idx += 1
 
     return answer
 
-
-def cal_grade(count):
-    if count == 6:
-        return 1
-    elif count == 5:
-        return 2
-    elif count == 4:
-        return 3
-    elif count == 3:
-        return 4
-    elif count == 2:
-        return 5
-    else:
-        return 6
-
-solution([44, 1, 0, 0, 31, 25]	, [31, 10, 45, 1, 6, 19]	)
+print(solution('one4seveneight'))
