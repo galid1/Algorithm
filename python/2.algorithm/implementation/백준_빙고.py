@@ -2,56 +2,81 @@ import sys
 
 
 def solve():
-    global board, calls
+    global board, calls_list, coords
 
     bingo = 0
-    cnt = 0
-    for line in calls:
-        for c in line:
-            cnt += 1
-            # c 찾기
-            for i in range(5):
-                for j in range(5):
-                    if board[i][j] == c:
-                        board[i][j] = True
+    answer = 0
 
-            bingo += check(i, j)
-            if bingo == 3:
-                return print(cnt)
-
-
-def check(i, j):
-    global board
-    line = 0
-
-    # 중간으로 모든 대각선과 가로세로 확인
-    if i == 2 and j == 2:
-        # 가로
-        cnt = 0
-        for k in range(5):
-            if board[2][k]:
-                cnt += 1
-        if cnt == 5:
-            line += 1
+    for calls in calls_list:
+        for c in calls:
+            answer += 1
+            x, y = coords[c]
+            visited[x][y] = True
+            bingo += check(x, y)
+            if bingo >= 3:
+                return print(answer)
 
 
 
-        return line
+def check(x, y):
+    global visited
 
-    # 대각선과 가로세로 확인
-    if (i == 0 and j == 0) or (i == 4 and j == 0) or (i == 0 and j == 4) or (i == 4 and j == 4):
+    bingo_line = 0
 
-        return line
-    # 가로 세로만 확인
+    is_one_bingo = True
+    # 가로 확인
+    for i in range(5):
+        if not visited[x][i]:
+            is_one_bingo = False
+            break
+    if is_one_bingo:
+        bingo_line += 1
 
-    return line
+    is_one_bingo = True
+    # 세로 확인
+    for i in range(5):
+        if not visited[i][y]:
+            is_one_bingo = False
+            break
+    if is_one_bingo:
+        bingo_line += 1
+
+    is_one_bingo = True
+    # 우하향 대각선
+    if x == y:
+        for i in range(5):
+            if not visited[i][i]:
+                is_one_bingo = False
+                break
+        if is_one_bingo:
+            bingo_line += 1
+
+    is_one_bingo = True
+    # 좌하향 대각선
+    if x+y == 4:
+        for i in range(5):
+            if not visited[i][4-i]:
+                is_one_bingo = False
+                break
+
+        if is_one_bingo:
+            bingo_line += 1
+
+    return bingo_line
 
 
 board = []
 for _ in range(5):
     board.append(list(map(int, sys.stdin.readline().strip().split(" "))))
 
-calls = []
+coords = {}
+for i in range(5):
+    for j in range(5):
+        coords[board[i][j]] = (i, j)
+
+calls_list = []
 for _ in range(5):
-    calls.append(list(map(int, sys.stdin.readline().strip().split(" "))))
+    calls_list.append(list(map(int, sys.stdin.readline().strip().split(" "))))
+
+visited = [[False for _ in range(5)] for _ in range(5)]
 solve()
