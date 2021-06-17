@@ -5,12 +5,12 @@ def solve():
     global n, nums
 
     # nums[k] > nums[k+1] 을 만족하는 가장 큰 k 구하기
-    k = 0
+    k = -1
     for i in range(n-1):
         if nums[i] > nums[i+1]:
             k = i
 
-    if k == 0:
+    if k == -1:
         return print(-1)
 
     m = k+1
