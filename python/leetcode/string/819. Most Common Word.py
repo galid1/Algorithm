@@ -24,7 +24,7 @@ def mostCommonWord(paragraph, banned):
             else:
                 cnts[word] = 1
 
-    return max(cnts.items(), key=lambda item: item[1])[0]
+    return print(max(cnts, key=cnts.get))
 
 
 banned = ["hit"]
