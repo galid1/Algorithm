@@ -32,13 +32,11 @@ def solve(x, y):
 
     board[x+1][y] = temp_start
 
-
 n, m, r = map(int, sys.stdin.readline().strip().split(" "))
 board = []
 for _ in range(n):
     board.append(list(map(int, sys.stdin.readline().strip().split(" "))))
 
-r = r%(n*m)
 for _ in range(r):
     recur(0, 0)
 
