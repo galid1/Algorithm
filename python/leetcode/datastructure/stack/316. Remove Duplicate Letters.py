@@ -22,9 +22,8 @@ def removeDuplicateLetters(s):
             if stack:
                 top_c = stack[-1]
 
-        if c not in visited:
-            visited.add(c)
-            stack.append(c)
+        visited.add(c)
+        stack.append(c)
 
 
     return ''.join(stack)
