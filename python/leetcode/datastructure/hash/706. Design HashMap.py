@@ -7,7 +7,7 @@ class ListNode:
 
 class MyHashMap:
     def __init__(self):
-        self.size = 2
+        self.size = 1000
         self.hash_table = [ListNode(key=None, val=None) for _ in range(self.size)]
 
     def _hash(self, value):
