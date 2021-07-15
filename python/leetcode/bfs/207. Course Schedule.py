@@ -10,14 +10,13 @@ class Solution:
         dependencies = self.make_dependencies(prerequisites)
 
         queue = deque(self.find_no_dependencies(dependencies))
-        visited = set()
         while queue:
             cur = queue.pop()
 
             for link in graph[cur]:
                 dependencies[link].remove(cur)
 
-                if not dependencies[link] and link not in visited:
+                if not dependencies[link]:
                     queue.append(link)
 
         return self.is_clear(dependencies)
