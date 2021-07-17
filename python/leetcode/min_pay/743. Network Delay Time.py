@@ -14,6 +14,7 @@ class Solution:
         while q:
             cur_idx = heapq.heappop(q)[1]
 
+            # 정점 비용갱신을 위해서 정점을 꺼낼때 방문 표시를 하기 때문에, 여러 정점에 의해서 같은 정점이 q에 추가됨 따라서, !! 여기서 방문했는지 검사를 하지 않으면, 같은 정점을 여러번 반복 탐색
             if cur_idx in visited:
                 continue
 
@@ -27,6 +28,9 @@ class Solution:
 
                 if next_idx not in visited:
                     heapq.heappush(q, (graph[k][next_idx], next_idx))
+                    # 여기서 방문을 추가하면 안됨
+                    # => 아직 탐색하지 않은것이 방문했다고 표시 되어비리기 때문에 해당 정점을 통한 비용갱신을 하지 않게됨
+
 
         ans = 0
         for idx, val in enumerate(graph[k]):
