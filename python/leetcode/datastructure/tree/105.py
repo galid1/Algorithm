@@ -11,16 +11,16 @@ class Solution:
         self.i_idx = 0
 
     def buildTree(self, preorder, inorder) -> TreeNode:
-        def recur(root):
-            p_val = preorder[self.p_idx]
-            i_val = inorder[self.i_idx]
+    def recur(root):
+        p_val = preorder[self.p_idx]
+        i_val = inorder[self.i_idx]
 
-            if p_val == i_val:
-                root.left = TreeNode(p_val)
-                self.p_idx += 1
-                self.i_idx += 1
-            if root.left:
-                recur(root.left)
+        if p_val == i_val:
+            root.left = TreeNode(p_val)
+            self.p_idx += 1
+            self.i_idx += 1
+        if root.left:
+            recur(root.left)
 
 
 
