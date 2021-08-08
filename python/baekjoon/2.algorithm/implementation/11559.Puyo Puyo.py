@@ -3,14 +3,10 @@ from collections import deque
 
 
 def solve():
-    removed = True
     chain_cnt = 0
-    while removed:
-        removed = remove_puyo()
-
-        if removed:
-            chain_cnt += 1
-            move_puyo()
+    while remove_puyo():
+        chain_cnt += 1
+        move_puyo()
 
     print(chain_cnt)
 
