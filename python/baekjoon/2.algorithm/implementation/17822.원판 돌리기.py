@@ -1,128 +1,179 @@
 import sys
 from collections import deque
 
+def solve(disks, cmds):
+    global n, m
 
-def solve():
-    global n, m, t, disks, cmds, disk_sums
-
-    for x, d, k in cmds:
-        turn_disk(x, d, k)
-
-        if not find_and_remove():
-            flat()
-
-    # 정답
-    print(disk_sums)
-
-
-def turn_disk(x, d, k):
-    global n, m, disks
-
-    for i in range(x, n+1, x):
-        print("disk : ", i)
-        for _ in range(k%m):
-            # 시계
-            if d == 0:
-                tmp = disks[i][m-1]
-                for g in range(m-1, 0, -1):
-                    disks[i][g] = disks[i][g-1]
-                disks[i][0] = tmp
-
-            # 반시계
-            else:
-                tmp = disks[i][0]
-                for g in range(0, m-1):
-                    disks[i][g] = disks[i][g+1]
-                disks[i][m-1] = tmp
+    for idx, dir, k in cmds:
+        # print("=========")
+        # print("bef : ")
+        # for i in range(1, n+1):
+        #     for j in range(m):
+        #         if disks[i][j] == DELETED:
+        #             print("X", end=' ')
+        #             continue
+        #         print(disks[i][j], end=' ')
+        #     print()
+        for i in range(idx, n+1, idx):
+            turn_disk(disks, i, dir, k)
+        # print("=========")
+        # print("after turn : ")
+        # for i in range(1, n + 1):
+        #     for j in range(m):
+        #         if disks[i][j] == DELETED:
+        #             print("X", end=' ')
+        #             continue
+        #         print(disks[i][j], end=' ')
+        #     print()
 
 
-# 인접한 수를 찾고 지움
-def find_and_remove():
-    global n, m, disks, disk_sums, num_cnt, ds, visited
+        removed = remove_adjacent_nums(disks)
 
-    removed = False
+        # if removed:
+        #     print("after removed")
+        #     for i in range(1, n + 1):
+        #         for j in range(m):
+        #             if disks[i][j] == DELETED:
+        #                 print("X", end=' ')
+        #                 continue
+        #             print(disks[i][j], end=' ')
+        #         print()
 
-    q = deque()
+        if not removed:
+            flatten(disks)
+            # print("after flatteen")
+            # for i in range(1, n + 1):
+            #     for j in range(m):
+            #         if disks[i][j] == DELETED:
+            #             print("X", end=' ')
+            #             continue
+            #         print(disks[i][j], end=' ')
+            #     print()
 
-    # 1번 디스크 부터
+    sums = 0
     for i in range(1, n+1):
         for j in range(m):
-            if visited[i][j]:
+            if disks[i][j] == DELETED:
+                continue
+            sums += disks[i][j]
+    print(sums)
+
+
+
+def turn_disk(disks, disk_idx, dir, k):
+    global m
+    turned_disk = [0 for _ in range(m)]
+
+    # 반시계
+    if dir == 1:
+        k *= -1
+
+    for idx, num in enumerate(disks[disk_idx]):
+        turned_disk[(idx+k)%m] = num
+
+    disks[disk_idx] = turned_disk
+
+
+def remove_adjacent_nums(disks):
+    global n, m
+    removed_num_sums = 0
+
+    for di in range(1, n+1):
+        for dj in range(m):
+            if disks[di][dj] == DELETED:
                 continue
 
-            q.append([i, j])
-            cur_num = disks[i][j]
-            adj_cnt = 0
+            removed_num_sums += bfs(disks, di, dj)
 
-            while q:
-                cx, cy = q.popleft()
+    return removed_num_sums > 0
 
-                for dx, dy in ds:
-                    nx, ny = cx+dx, (cy+dy)%m
 
-                    if not valid(nx, ny):
-                        continue
+def bfs(disks, di, dj):
+    global m, DELETED
 
-                    if visited[nx][ny]:
-                        continue
+    removed_sums = 0
+    q = deque([[di, dj]])
+    target = disks[di][dj]
 
-                    if cur_num == disks[nx][ny]:
-                        adj_cnt += 1
-                        visited[nx][ny] = True
-                        q.append([nx, ny])
+    while q:
+        cx, cy = q.popleft()
 
-            print("=======")
-            print('i , j : ', i , j)
-            print(' cur num : ', cur_num)
-            print('adj_cnt : ', adj_cnt)
+        for dx, dy in ds:
+            nx, ny = cx+dx, (cy+dy)%m
 
-            if adj_cnt <= 1:
+            if not valid(nx, ny):
                 continue
 
-            removed = True
-            disk_sums -= (cur_num * adj_cnt)
-            num_cnt -= adj_cnt
+            if disks[nx][ny] == DELETED:
+                continue
 
-    return removed
+            if disks[nx][ny] == target:
+                removed_sums += disks[nx][ny]
+                disks[nx][ny] = DELETED
+                q.append([nx, ny])
+
+    return removed_sums
 
 
 def valid(x, y):
     global n, m
-    return 1 <= x < n+1 and 0 <= y < m
+
+    return 1 <= x <= n and 0 <= y < m
 
 
-def flat():
-    global disk_sums, num_cnt, disks, n, m
+def flatten(disks):
+    global n, m, DELETED
 
-    if disk_sums == 0:
-        return
-
-    avg = disk_sums/num_cnt
+    sums, cnt = 0, 0
 
     for i in range(1, n+1):
         for j in range(m):
+            if disks[i][j] == DELETED:
+                continue
+            sums += disks[i][j]
+            cnt += 1
+
+    if sums == 0:
+        print(sums)
+        exit()
+
+    avg = sums/cnt
+    for i in range(1, n+1):
+        for j in range(m):
+            if disks[i][j] == DELETED:
+                continue
+
             if disks[i][j] > avg:
                 disks[i][j] -= 1
             elif disks[i][j] < avg:
                 disks[i][j] += 1
 
 
+DELETED = -1000000000
+ds = [[-1, 0], [1, 0], [0, -1], [0, 1]]
 n, m, t = map(int, sys.stdin.readline().strip().split(" "))
 
-disks = [[],]
-disk_sums, num_cnt = 0, n*m
-visited = [[False for _ in range(m)] for _ in range(n+1)]
+disks = [[]]
 for _ in range(n):
     disk = list(map(int, sys.stdin.readline().strip().split(" ")))
     disks.append(disk)
-    disk_sums += sum(disk)
 
 cmds = []
 for _ in range(t):
-    cmds.append(list(map(int, sys.stdin.readline().strip().split(" "))))
+    idx, dir, k = list(map(int, sys.stdin.readline().strip().split(" ")))
+    k = k%m
 
-ds = [[-1, 0], [1, 0], [0, -1], [0, 1]]
-solve()
+    cmds.append([idx, dir, k])
+
+solve(disks, cmds)
+
+
+# 4 4 1
+# 1 1 1 1
+# 1 1 1 1
+# 1 1 1 1
+# 1 1 1 1
+# 1 0 1
 
 # 4 4 1
 # 1 1 2 3
@@ -130,13 +181,6 @@ solve()
 # 3 1 3 5
 # 2 1 3 2
 # 2 0 1
-
-
-# 2 2 1
-# 1 1
-# 1 1
-# 1 0 1
-
 
 # 8 4 1
 # 1 1 2 3
@@ -147,4 +191,4 @@ solve()
 # 5 2 4 2
 # 3 1 3 5
 # 2 1 3 2
-# 6 0 1
+# 2 0 1
