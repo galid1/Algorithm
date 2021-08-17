@@ -5,7 +5,7 @@ class Solution:
         heap = []
 
         for x, y in points:
-            distance = pow(pow(x, 2) + pow(y, 2), 1/2)
+            distance = pow(x, 2) + pow(y, 2)
             heapq.heappush(heap, [distance, [x,y]])
 
         results = []

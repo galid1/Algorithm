@@ -18,8 +18,35 @@ class Solution:
         return nums
 
     def smallThanCompared(self, compared, comparator):
-        return int(compared+comparator) > int(comparator+compared)
+        idx = 0
+        while idx < len(compared) and idx < len(comparator):
+            if compared[idx] > comparator[idx]:
+                return True
+            elif comparator[idx] > compared[idx]:
+                return False
+            idx += 1
+
+        # compared가 더 긴 경우
+        if len(compared) > len(comparator):
+            comparator = comparator[idx - 1]
+            while idx < len(compared):
+                if compared[idx] > comparator:
+                    return True
+                elif comparator > compared[idx]:
+                    return False
+                idx += 1
+
+        else:
+            compared = compared[idx - 1]
+            while idx < len(comparator):
+                if comparator[idx] > compared:
+                    return False
+                elif compared > comparator[idx]:
+                    return True
+                idx += 1
+
+        return True
 
 s = Solution()
-nums = [0, 0]
+nums = [3,30,34,5,9]
 print(s.largestNumber(nums))
