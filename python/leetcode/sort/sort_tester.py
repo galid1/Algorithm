@@ -1,12 +1,15 @@
 import random
 
 def _sort(nums):
-    for i in range(len(nums)-1, -1, -1):
-        for j in range(0, i):
-            if nums[j] > nums[i]:
-                nums[i], nums[j] = nums[j], nums[i]
+    for i in range(1, len(nums)):
+        tmp = nums[i]
+        for j in range(i - 1, -2, -1):
+            if nums[j] > tmp:
+                nums[j + 1] = nums[j]
+            else:
+                break
 
-    print(nums)
+        nums[j + 1] = tmp
     return nums
 
 nums = [i for i in range(20)]
