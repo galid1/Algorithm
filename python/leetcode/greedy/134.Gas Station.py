@@ -1,22 +1,44 @@
 class Solution:
     def canCompleteCircuit(self, gas, cost):
-        subs = []
+        subs, subs_sum = [], 0
         for n1, n2 in zip(gas, cost):
-            subs.append(n1-n2)
+            sub = n1 - n2
+            subs.append(sub)
+            subs_sum += sub
 
-        for i in range(len(subs)):
-            can = True
-            sums = 0
-            for j in range(len(subs)):
-                sums += subs[(i+j)%len(subs)]
-                if sums < 0:
-                    can = False
-                    break
+        if subs_sum < 0:
+            return -1
 
-            if can:
-                return i
+        ans_idx = 0
+        cur_fuel = 0
+        for idx, sub in enumerate(subs):
+            if cur_fuel + sub < 0:
+                ans_idx = idx+1
+                cur_fuel = 0
+            else:
+                cur_fuel += sub
 
-        return -1
+        return ans_idx
+
+    # O(N^2)
+    # def canCompleteCircuit(self, gas, cos):
+        # subs = []
+        # for n1, n2 in zip(gas, cost):
+        #     subs.append(n1-n2)
+        #
+        # for i in range(len(subs)):
+        #     can = True
+        #     sums = 0
+        #     for j in range(len(subs)):
+        #         sums += subs[(i+j)%len(subs)]
+        #         if sums < 0:
+        #             can = False
+        #             break
+        #
+        #     if can:
+        #         return i
+        #
+        # return -1
 
 
 s = Solution()
