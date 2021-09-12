@@ -38,7 +38,7 @@ def make_prime_board(n):
                 array[i * j] = False
                 j += 1
 
-    return [i for i in range(2, n+1) if array[i] ]
+    return [i for i in range(2, n+1) if array[i]]
 
 
 answer = []
