@@ -1,43 +1,36 @@
-def longestPalindrome(s):
-    max_l = -1
-    max_s = ''
+class Solution:
+    def longestPalindrome(self, s):
+        def expand(s, si, ei):
+            if s[si] != s[ei]:
+                return 0, si, ei
 
-    if len(s) == 1:
-        return s
+            max_len = ei - si + 1
+            while si-1 >= 0 and ei+1 < len(s) and s[si-1] == s[ei+1]:
+                si, ei = si-1, ei+1
+                max_len = ei - si + 1
 
-    for i in range(len(s) - 1):
-        if len(s) - i <= max_l:
-            break
-
-        for j in range(len(s), i, -1):
-            sub_s_len = j - i
-            if sub_s_len <= max_l:
-                break
-            if is_palindrome(s, i, j):
-                if sub_s_len > max_l:
-                    max_l = sub_s_len
-                    max_s = s[i:j]
-                break
-    return max_s
+            return max_len, si, ei
 
 
-def is_palindrome(s, first, last):
-    length = last - first
+        max_len = 0
+        max_si, max_ei = 0, 0
 
-    for i in range(first, first + length//2+1):
-        if s[i] != s[last-1-(i-first)]:
-            return False
+        for i in range(len(s)-1):
+            tmp_len, tmp_si, tmp_ei = expand(s, i, i+1)
+            if tmp_len > max_len:
+                max_len, max_si, max_ei = tmp_len, tmp_si, tmp_ei
 
-    return True
+            if i+2 < len(s):
+                tmp_len, tmp_si, tmp_ei = expand(s, i, i+2)
+                if tmp_len > max_len:
+                    max_len, max_si, max_ei = tmp_len, tmp_si, tmp_ei
+
+        return s[max_si:max_ei+1]
 
 
 
-# s = "babad"
-# s = "a"
-# s = 'ac'
-# s = 'aa'
-# s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-# s = "cbbd"
-s = "aacabdkacaa"
-# s = "cabdkac"
-longestPalindrome(s)
+
+solution = Solution()
+# s = 'babab'
+s = "cbbd"
+print(solution.longestPalindrome(s))
