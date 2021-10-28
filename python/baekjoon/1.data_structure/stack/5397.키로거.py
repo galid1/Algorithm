@@ -25,14 +25,22 @@ def solve():
             left.append(cmd)
 
     ans = ''
-    # 'x' + 원래 문자열은 몇의 시간복잡도 ??
+
+    ans = ''.join(left)
+    right.reverse()
+    ans += ''.join(right)
+    print(ans)
+
+    # left.extend(reversed(right))
+    # print(''.join(left))
+
+
+    # 'x' + 원래 문자열은 몇의 시간복잡도 ??, 아래 답변은 시간 초과가 발생함
     # while left:
     #     ans = left.pop() + ans
     #
     # while right:
     #     ans += right.pop()
-    left.extend(reversed(right))
-    print(''.join(left))
 
 
 t = int(sys.stdin.readline().strip())
