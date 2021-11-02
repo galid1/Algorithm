@@ -29,7 +29,7 @@ def solution(logs):
             del dic[cur_key]
 
             if not answer:
-            return ["None"]
+                return ["None"]
     return answer
 
 
