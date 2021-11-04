@@ -23,6 +23,6 @@ def can_give_to(to, received, limit):
 id_list = ["A B C D", "A D", "A B D", "B D"]
 k = 2
 
-id_list = ["JAY", "JAY ELLE JAY MAY", "MAY ELLE MAY", "ELLE MAY", "ELLE ELLE ELLE", "MAY"]
-k = 3
+# id_list = ["JAY", "JAY ELLE JAY MAY", "MAY ELLE MAY", "ELLE MAY", "ELLE ELLE ELLE", "MAY"]
+# k = 3
 print(solution(id_list, k))
