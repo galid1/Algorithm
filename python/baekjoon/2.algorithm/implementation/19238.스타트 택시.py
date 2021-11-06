@@ -12,7 +12,7 @@ def solve():
     while not fail and remain_customer:
         result = find_customer(cx, cy, fuel)
 
-        # 실패
+        # 승객 태우러 가는 중 실패
         if result == -1:
             return print(-1)
 
@@ -22,10 +22,14 @@ def solve():
         board[start_x][start_y] = 0
         remain_customer -= 1
 
+        # 목적지 이동
         use_fuel = move_to(start_x, start_y, dest_x, dest_y, fuel)
 
+        # 목적지 이동 중 실패
         if use_fuel == -1:
             return print(-1)
+
+        # 위치 갱신, 연료 사용 및 추가
         fuel += use_fuel
         cx, cy = dest_x, dest_y
 
