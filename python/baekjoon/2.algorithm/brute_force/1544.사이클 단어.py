@@ -6,7 +6,7 @@ def solve():
 
     ans = 0
     while ws:
-        w = ws.pop(0)
+        w = ws.pop()
         ans += 1
 
         for _ in range(len(w)):
@@ -22,9 +22,9 @@ def shuffle(w):
 
 
 n = int(sys.stdin.readline().strip())
-ws = []
+ws = set()
 for _ in range(n):
-    ws.append(sys.stdin.readline().strip())
+    ws.add(sys.stdin.readline().strip())
 
 solve()
 
