@@ -58,7 +58,7 @@ def check_ver(board, i, j):
         if not valid(ni - 1, j):
             break
 
-        if board[ni][j] != 'X':
+        if board[ni - 1][j] != 'X':
             break
 
         ni -= 1
@@ -69,7 +69,7 @@ def check_ver(board, i, j):
         if not valid(ni + 1, j):
             break
 
-        if board[ni][j] != 'X':
+        if board[ni + 1][j] != 'X':
             break
 
         ni += 1
