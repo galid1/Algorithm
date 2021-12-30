@@ -7,8 +7,11 @@ def solve():
 
     # a -> v1 -> v2 -> n
     # a -> v2 -> v1 -> n
-    path1 = dijkstra(1, v1) + dijkstra(v1, v2) + dijkstra(v2, n)
-    path2 = dijkstra(1, v2) + dijkstra(v2, v1) + dijkstra(v1, n)
+    one = dijkstra(1)
+    v1_ = dijkstra(v1)
+    v2_ = dijkstra(v2)
+    path1 = one[v1] + v1_[v2] + v2_[n]
+    path2 = one[v2] + v2_[v1] + v1_[n]
     ans = min(path1, path2)
 
     if ans >= INF:
@@ -17,7 +20,7 @@ def solve():
         print(ans)
 
 
-def dijkstra(_from, _to):
+def dijkstra(_from):
     global n, g, INF
 
     dis_arr = [INF for _ in range(n+1)]
@@ -44,7 +47,7 @@ def dijkstra(_from, _to):
 
             heapq.heappush(q, (w + n_w, n_dest))
 
-    return dis_arr[_to]
+    return dis_arr
 
 
 INF = sys.maxsize
@@ -55,8 +58,10 @@ for _ in range(e):
     f, t, c = map(int, sys.stdin.readline().strip().split(" "))
     if t in g[f].keys():
         g[f][t] = min(g[f][t], c)
+        g[t][f] = min(g[t][f], c)
     else:
         g[f][t] = c
+        g[t][f] = c
 
 for i in range(1, n + 1):
     g[i][i] = 0
@@ -64,37 +69,3 @@ for i in range(1, n + 1):
 v1, v2 = map(int, sys.stdin.readline().strip().split(" "))
 
 solve()
-
-
-
-
-
-from heapq import heappush, heappop
-import sys
-input = sys.stdin.readline
-n, e = map(int, input().split())
-s = [[] for i in range(n + 1)]
-inf = sys.maxsize
-for i in range(e):
-    a, b, c = map(int, input().split())
-    s[a].append([b, c])
-    s[b].append([a, c])
-v1, v2 = map(int, input().split())
-def dijkstra(start):
-    dp = [inf for i in range(n + 1)]
-    dp[start] = 0
-    heap = []
-    heappush(heap, [0, start])
-    while heap:
-        w, c = heappop(heap)
-        for n_n, n_w in s[c]:
-            wei = n_w + w
-            if dp[n_n] > wei:
-                dp[n_n] = wei
-                heappush(heap, [wei, n_n])
-    return dp
-one = dijkstra(1)
-v1_ = dijkstra(v1)
-v2_ = dijkstra(v2)
-cnt = min(one[v1] + v1_[v2] + v2_[n], one[v2] + v2_[v1] + v1_[n])
-print(cnt if cnt < inf else -1)
