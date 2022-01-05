@@ -7,46 +7,50 @@
 
 import sys
 
-def kmp_match(txt: str, pat: str) -> int:
-    # 스킵테이블 만들기
-    def make_skip_table(skip: list):
-        pt = 1  # txt를 따라가는 인덱스
-        pp = 0  # pat를 따라가는 인덱스
-        while pt < len(pat):
-            if pat[pt] == pat[pp]:
-                pt += 1
-                pp += 1
-                skip[pt] = pp
-            elif pp == 0:
-                pt += 1
-                skip[pt] = pp
-            else:
-                pp = skip[pp]
 
-    # 부분 문자열 찾기 (이 문제에서는 있는지 없는지만 찾으면 된다.)
-    def find_match_idx(txt: str, pat: str) -> int:
-        pt = 0
-        pp = 0
-        while pt < len(txt) and pp < len(pat):
-            if txt[pt] == pat[pp]:
-                pt += 1
-                pp += 1
-            elif pp == 0:  # 더 이상 앞으로 돌아갈 수 없는 경우
-                pt += 1
-            else:
-                pp = skip[pp]
-        if pp == len(pat):
-            return 1
+def solve():
+    global s, p
+
+    ps = make_ps()
+
+
+def make_ps():
+    # abcabc
+    # ababa
+    p = "ababa"
+    ps = [0 for _ in range(len(p))]
+
+    h, t = 0, 1
+    while t < len(p):
+        if p[h] == p[t]:
+            h, t = h+1, t+1
+            ps[t] = h
+
         else:
-            return 0
+            h, t = 0, t+1
 
-    skip = [0] * (len(pat) + 1)
-    make_skip_table(skip)
-    answer = find_match_idx(txt, pat)
-    print(answer)
+    print(ps)
+
+def make_skip_table():
+    pat = 'ababa'
+    skips = [0 for _ in range(len(pat) + 1)]
+    pp = 0
+    pt = 1
+    while pt < len(pat):
+        if pat[pt] == pat[pp]:
+            pt += 1
+            pp += 1
+            skips[pt] = pp
+        elif pp == 0:
+            pt += 1
+            skips[pt] = pp
+        else:
+            pp = skips[pp]
+
+    return skips
 
 
-if __name__ == '__main__':
-    S = input()
-    P = input()
-    kmp_match(S, P)
+# s = sys.stdin.readline().strip()
+# p = sys.stdin.readline().strip()
+
+solve()
