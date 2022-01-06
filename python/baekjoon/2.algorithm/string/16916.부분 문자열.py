@@ -11,46 +11,51 @@ import sys
 def solve():
     global s, p
 
-    ps = make_ps()
+    ps = make_ps(p)
+
+    idx, jdx = 0, 0
+    while idx + len(p) <= len(s):
+        same = True
+        while jdx < len(p):
+            if s[idx + jdx] != p[jdx]:
+                same = False
+                break
+            jdx += 1
+
+        if same:
+            return print(1)
+
+        if jdx == 0:
+            idx += 1
+        else:
+            idx += jdx - ps[jdx - 1]
+            jdx = ps[jdx - 1]
+
+    print(0)
 
 
-def make_ps():
-    # abcabc
-    # ababa
-    p = "ababa"
+def make_ps(p):
     ps = [0 for _ in range(len(p))]
 
-    h, t = 0, 1
-    while t < len(p):
+    h = 0
+    for t in range(1, len(p)):
+        while h > 0 and p[h] != p[t]:
+            h = ps[h-1]
+
         if p[h] == p[t]:
-            h, t = h+1, t+1
+            h += 1
             ps[t] = h
 
-        else:
-            h, t = 0, t+1
+    return ps
 
-    print(ps)
-
-def make_skip_table():
-    pat = 'ababa'
-    skips = [0 for _ in range(len(pat) + 1)]
-    pp = 0
-    pt = 1
-    while pt < len(pat):
-        if pat[pt] == pat[pp]:
-            pt += 1
-            pp += 1
-            skips[pt] = pp
-        elif pp == 0:
-            pt += 1
-            skips[pt] = pp
-        else:
-            pp = skips[pp]
-
-    return skips
+# a b a c a a b a c a a c d
+# 0 0 1 0 1 1 2 3 4 5 6
 
 
-# s = sys.stdin.readline().strip()
-# p = sys.stdin.readline().strip()
+s = sys.stdin.readline().strip()
+p = sys.stdin.readline().strip()
 
 solve()
+
+# ababcababa
+# ababa
